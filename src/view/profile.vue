@@ -48,6 +48,7 @@ export default {
         window.addEventListener('resize', this.resize_event); //resize
     },
     beforeDestory() {
+        window.removeEventListener('resize', this.resize_event);
     },
     
 

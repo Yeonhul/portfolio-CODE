@@ -3,12 +3,13 @@
         <div class="blog_box">
             <em>Posting list</em>
             <select v-model="$store.state.select" class="select">
-                <option :value="'all'" >All</option>
-                <option :value="'html'">HTML</option>
-                <option :value="'css'">CSS</option>
-                <option :value="'javascript'">Javascript</option>
-                <option :value="'scss'">SCSS</option>
-                <option :value="'vue'">Vue.js</option>
+                <option value="all" >All</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+                <option value="scss">SCSS</option>
+                <option value="vue">Vue.js</option>
+                <option value="TIP">TIP</option>
             </select>
             <div class="posting_list">
                 <div class="post_box" v-for="(blist, index) in posting_list" 

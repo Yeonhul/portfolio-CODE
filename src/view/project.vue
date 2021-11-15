@@ -6,9 +6,8 @@
                 <div class="project_box" v-for="(list, index) in $store.state.project" :key="index">
                     <div class="pl_box">
                         <p>{{ list.name }}</p><em>{{ list.day }}</em>
-                        <div class="pli" @click="project_link(index)">
+                        <div class="pli">
                            <img :src="require(`@/img/project/${list.name}.png`)" alt="" >
-                           <span><p>VIEW PROJECT</p></span>
                         </div>
                     </div>
                     <div class="pr_box" >
@@ -19,7 +18,10 @@
                         <p v-html="line(index)"></p>
                         <h1>나의 기여도</h1>
                         <p>{{ list.did }}</p>
-                        <input type="button" value="view_code" @click="codelink(index)">
+                        <div class="link_bt">
+                            <input type="button" value="프로젝트 보러가기" @click="project_link(index)">
+                            <input type="button" value="코드 보러가기" @click="codelink(index)">
+                        </div>
                     </div>
                 </div>
             </div>

@@ -41,6 +41,27 @@ export default [
         img : 'VUE_3',
         link : 'https://fork-valley-f0c.notion.site/vue_roter-6b26b914149c41a9a38a6950090a412a',
     },
+    {
+        title : 'Vue Lazy load',
+        tag : 'VUE',
+        day : '21.10.20',
+        img : 'VUE_4',
+        link : 'https://fork-valley-f0c.notion.site/Vue-Lazy-Load-bad87ddff700497dbde887ec87b0d055',
+    },
+    {
+        title : 'Vue 3.x axios 적용법',
+        tag : 'VUE',
+        day : '21.11.01',
+        img : 'VUE_5',
+        link : 'https://fork-valley-f0c.notion.site/Vue3-x-axios-95a855e332c642be97cdd2ae968691fa',
+    },
+    {
+        title : '[Heroku] Node 프로젝트 <br> 도메인 배포',
+        tag : 'TIP',
+        day : '21.11.06',
+        img : 'TIP_1',
+        link : 'https://fork-valley-f0c.notion.site/Heroku-node-js-4b503e6419254984b7cbe90dbe4bc85c'
+    },
 
     
     

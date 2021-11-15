@@ -158,3 +158,6 @@
 .vue {
     @include font($c : #60EFDB);
 }
+.tip {
+    @include font($c : #fff);
+}

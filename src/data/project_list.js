@@ -37,13 +37,13 @@ export default [
 
     {
         name : 'PASTEL PALETTE',
-        day : '2021.08 ~ 2021.09',
+        day : '2021.08 ~ 2021.09 이후 버전 업데이트 중',
         people : '개인 프로젝트',
         stack : 'HTML, CSS, JAVASCRIPT, JQUERY, VUE',
         goal : 'VUE 처음 활용한 프로젝트 입니다. 여러 파스텔 색상을 소개해주는 목적으로 제작되었고\n HTML, CSS, JAVASCRIPT, JQUERY, VUE 로 제작되었으며, \n VUE 활용, 배포 등 많은 경험을 할 수 있었던 프로젝트 입니다.',
         did : '전체 기능',
         link : 'https://yeonhul.github.io/vue_PASTEL/',
-        codelink : 'https://github.com/Yeonhul/Yeonhul.github.io/tree/main/vue_PASTEL'
+        codelink : 'https://github.com/Yeonhul/PASTEL-CODE'
     },
     {
         name : 'Portfolio',
@@ -53,7 +53,7 @@ export default [
         goal : '보고 계신 페이지의 프로젝트 입니다. 포트폴리오 목적으로 제작 되었습니다',
         did : '전체 기능',
         link : 'https://yeonhul.github.io/portfolio/',
-        codelink : 'https://github.com/Yeonhul/Yeonhul.github.io/tree/main/portfolio'
+        codelink : 'https://github.com/Yeonhul/portfolio-CODE'
     },
 
     // {

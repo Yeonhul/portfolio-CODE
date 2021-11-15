@@ -46,27 +46,10 @@
                         .pli {
                             @include size(100%, 100%);
                             @include pos(relative);
-                            cursor: pointer;
                             overflow: hidden;
                             > img {
                                 @include size(100%);
                                 transition: all .5s;
-                            }
-                            > span {
-                                @include size(100%, 0%);
-                                @include flex($a : center, $j : center);
-                                @include pos(absolute, $b : 0);
-                                @include font($s : 1.2rem, $w : 700, $c : #fff);
-                                opacity: 0;
-                                z-index: 1;
-                                transition: .5s;
-                                background-color: rgba($color: #000000, $alpha: .5);
-                            }
-                            &:hover {
-                                > span {
-                                    @include size(100%, 100%);
-                                    opacity: 1;
-                                }
                             }
                         }
                     }
@@ -90,27 +73,33 @@
                         > p {
                             @include margin($b : 10px);
                         }
-                        > input {
-                            @include border($px : 2px);
-                            @include font($s : 1rem, $f : ne, $lh : 1.3rem, $w : 700);
-                            @include padding($all : 2px 7px);
-                            background: rgba($color: #000000, $alpha: 0);
-                            background-size: 100% 0%;
-                            background-position: bottom;
-                            transition: all .25s;
-                            &:hover {
-                                cursor: pointer;
-                                background: linear-gradient(to bottom, $b2_point 0, $b2_point 100%);
-                                background-size: 100% 50%;
-                                background-position: bottom;
-                                background-repeat: no-repeat;
-                            }
-                            @include tablet2{
+                        .link_bt {
+                            > input {
                                 @include border($px : 1px);
-                                @include font($s : .9rem, $f : ne, $lh : 1.1rem, $w : 700);
-                                @include padding($all : 2px 4px);
+                                @include font($s : .9rem, $f : ne, $lh : 1.2rem, $w : 700);
+                                @include padding($all : 2px 7px);
+                                background: rgba($color: #000000, $alpha: 0);
+                                background-size: 100% 0%;
+                                background-position: bottom;
+                                transition: all .25s;
+                                &:hover {
+                                    cursor: pointer;
+                                    background: linear-gradient(to bottom, $b2_point 0, $b2_point 100%);
+                                    background-size: 100% 50%;
+                                    background-position: bottom;
+                                    background-repeat: no-repeat;
+                                }
+                                &:nth-child(2) {
+                                    margin-left : 5px;
+                                }
+                                @include tablet2{
+                                    @include border($px : 1px);
+                                    @include font($s : .9rem, $f : ne, $lh : 1.1rem, $w : 700);
+                                    @include padding($all : 2px 4px);
+                                }
                             }
                         }
+                        
                     }
                 }
             }
@@ -181,24 +170,10 @@
                             @include size(100%, 100%);
                             @include pos(relative);
                             overflow: hidden;
-                            cursor: pointer;
                             > img {
                                 @include size(100%);
                             }
-                            > span {
-                                @include size(100%, 0%);
-                                @include pos(absolute, $b : 0);
-                                @include font($s : 1.2rem, $w : 700, $c : #fff);
-                                @include flex($a : center, $j : center);
-                                opacity: 0;
-                                z-index: 1;
-                                transition: all .5s;
-                                background-color: rgba($color: #000000, $alpha: .5);
-                            }
-                            &:hover > span{
-                                @include size(100%, 100%);
-                                opacity: 1;
-                            }
+
                         }
                     }
                     .pr_box {
@@ -225,12 +200,18 @@
                                 @include font($s : .8rem);
                             }
                         }
-                        > input {
-                            @include border($px : 2px);
-                            @include font($s : .9rem, $f : ne, $lh : 1.1rem, $w : 400);
-                            @include padding($all : 2px 7px);
-                            @include margin($b : 10px);
-                            background: rgba($color: #000000, $alpha: 0);
+                        .link_bt {
+                            > input {
+                                @include border($px : 1px);
+                                @include font($s : .8rem, $f : ne, $lh : 1rem, $w : 700);
+                                @include padding($all : 2px 7px);
+                                @include margin($b : 10px);
+                                background: rgba($color: #000000, $alpha: 0);
+                                &:nth-child(2) {
+                                    margin-left : 5px;
+                                }
+                            }
+
                         }
 
                     }
