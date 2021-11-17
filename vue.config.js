@@ -7,7 +7,7 @@ module.exports = {
     devServer: {
         disableHostCheck: true // 원격서버 접속 허용
     },
-    // publicPath : '/portfolio',
+    publicPath : '/portfolio',
     css : { // scss 전역
         loaderOptions : {
             sass : {

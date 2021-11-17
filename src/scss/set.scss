@@ -19,7 +19,7 @@ $b3_point : #bfffc7;
 
 // @media start
 @mixin mobile {
-    @media screen and (max-width : $pc_width - 1px){
+    @media screen and (max-width : ($pc_width - 1px)){
         @content;
     }
 }
